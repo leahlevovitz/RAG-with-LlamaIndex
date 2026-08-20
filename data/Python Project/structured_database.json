@@ -1,0 +1,1433 @@
+{
+    "schema_version": "1.0",
+    "items": {
+        "decisions": [
+            {
+                "id": "N/A",
+                "title": "מעבר ל-PostgreSQL בסביבת ייצור",
+                "summary": "מעבר מ-SQLite ל-PostgreSQL בסביבת ייצור עקב גידול הצוות וכמות הנתונים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "1. מעבר ל-PostgreSQL בסביבת ייצור"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "מערכת התראות בזמן אמת",
+                "summary": "הוספת התראות בזמן אמת עבור משימות חדשות, השלמת משימות ותזכורות לתאריכי יעד",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "2. מערכת התראות בזמן אמת"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "אינטגרציה עם אימייל",
+                "summary": "אינטגרציה עם אימייל עבור אימות, סיכומים שבועיים והתראות על משימות",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "3. אינטגרציה עם אימייל"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "Pagination על רשימת המשימות",
+                "summary": "הוספת Pagination לרשימת המשימות כדי למנוע האטת הדף בצוותים גדולים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "4. Pagination על רשימת המשימות"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "REST API עם Django REST Framework",
+                "summary": "יצירת REST API עם Django REST Framework לאפליקציות מובייל ואינטגרציות חיצוניות",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "5. REST API עם Django REST Framework"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "היסטוריית שינויים למשימה",
+                "summary": "תיעוד היסטוריית שינויים למשימה, כולל מי שינה, מתי ומה השתנה",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "6. היסטוריית שינויים למשימה"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "שיפור ביצועי שאילתות",
+                "summary": "שיפור ביצועי שאילתות באמצעות הוספת select_related ומניעת N+1, וכן הוספת אינדקסים לשדות מסוננים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "7. שיפור ביצועי שאילתות"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "אפשרות לשינוי צוות ותפקיד",
+                "summary": "אפשרות לשינוי צוות ותפקיד ללא צורך בהרשמה מחדש, עם אישור מנהל בלבד",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "8. אפשרות לשינוי צוות ותפקיד"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "העברת SECRET_KEY למשתנה סביבה",
+                "summary": "העברת SECRET_KEY למשתנה סביבה לפני כל deployment לייצור",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "future_improvements.md",
+                    "anchor": "9. העברת SECRET_KEY למשתנה סביבה"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "בחירת מסד הנתונים",
+                "summary": "החלטה להשתמש ב-SQLite בשל פשטות הגדרה ופיתוח מקומי. מגבלות ידועות כוללות חוסר התאמה לסביבת ייצור עם עומסים גבוהים וחוסר תמיכה בגישה מקבילה מרובת תהליכים.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "technical_decisions.md",
+                    "anchor": "בחירת מסד הנתונים"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "מבנה ה-URL / API",
+                "summary": "המערכת משתמשת ב-Django Views מסורתיים ללא REST API. מומלץ להוסיף Django REST Framework אם יידרש בעתיד.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "technical_decisions.md",
+                    "anchor": "מבנה ה-URL / API"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "בחירת ספריות מרכזיות",
+                "summary": "נבחרו Django, Bootstrap ו-SQLite בשל יתרונות כמו מסגרת עבודה מלאה, עיצוב מהיר ופשטות פיתוח מקומי. ספריות שלא נבחרו כוללות Django REST Framework, Celery ו-Redis מכיוון שאין צורך בהן כרגע.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "technical_decisions.md",
+                    "anchor": "בחירת ספריות מרכזיות"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "החלטות אבטחה",
+                "summary": "נבחר מנגנון הזדהות בטוח של Django, סיסמאות מוצפנות עם PBKDF2, הגנת CSRF מופעלת, והגנה על Views רגישים. בדיקת הרשאות נעשית ברמת ה-View. נקודות לשיפור כוללות העברת SECRET_KEY למשתנה סביבה, הגדרת DEBUG ל-False בייצור, והגדרת ALLOWED_HOSTS לדומיין ספציפי בייצור.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "technical_decisions.md",
+                    "anchor": "החלטות אבטחה"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "החלטות לגבי ביצועים",
+                "summary": "שאילתות ORM עם filter() ישירות ללא N+1 בולט. אין pagination או caching, מה שעלול להוות בעיה עם צוותים גדולים.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "technical_decisions.md",
+                    "anchor": "החלטות לגבי ביצועים"
+                }
+            },
+            {
+                "id": "rtl-support",
+                "title": "תמיכה ב-RTL (ימין לשמאל)",
+                "summary": "כל דפי המערכת כתובים בעברית ומוגדרים עם RTL",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "תמיכה ב-RTL (ימין לשמאל)"
+                }
+            },
+            {
+                "id": "color-palette",
+                "title": "פלטת צבעים",
+                "summary": "המערכת משתמשת בגרדיאנטים רכים ועקביים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "פלטת צבעים"
+                }
+            },
+            {
+                "id": "cards",
+                "title": "כרטיסיות (Cards)",
+                "summary": "כל תוכן מוצג בתוך כרטיסיות עם עיצוב אחיד",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "buttons",
+                "title": "כפתורים",
+                "summary": "הגדרת סגנונות כפתורים שונים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "forms",
+                "title": "טפסים",
+                "summary": "הגדרת סגנונות טפסים",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "טפסים"
+                }
+            },
+            {
+                "id": "user-messages",
+                "title": "הודעות למשתמש",
+                "summary": "הצגת הודעות למשתמש באמצעות מנגנון messages של Django",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "responsiveness",
+                "title": "רספונסיביות",
+                "summary": "הגדרת פריסה רספונסיבית המבוססת על Grid של Bootstrap",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "רספונסיביות"
+                }
+            },
+            {
+                "id": "user-experience",
+                "title": "חוויית משתמש",
+                "summary": "הגדרת עקרונות לחוויית משתמש טובה",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "חוויית משתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "תמיכה ב-RTL",
+                "summary": "הממשק כתוב בעברית ומחייב כיוון ימין-לשמאל בכל הדפים.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "תמיכה ב-RTL"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "פלטת צבעים",
+                "summary": "המערכת משתמשת בגרדיאנטים רכים ועקביים. אין להוסיף צבעים חדשים שאינם מהפלטה.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "פלטת צבעים"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "כרטיסיות (Cards)",
+                "summary": "כל בלוק תוכן עצמאי מוצג בתוך כרטיסייה עם עיצוב אחיד.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "כפתורים וטפסים",
+                "summary": "הנחיות לעיצוב כפתורים וטפסים, כולל סוגי כפתורים שונים ומבנה טופס POST.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "הודעות למשתמש",
+                "summary": "הנחיות להצגת הודעות למשתמש, כולל סוגי הודעות ושדות select.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "ממשק פשוט וברור",
+                "summary": "הנחיות לעיצוב ממשק פשוט וברור, כולל נגישות, משוב מיידי ופריסה רספונסיבית.",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "ממשק פשוט וברור"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "בחירת מסד הנתונים: SQLite",
+                "summary": "שימוש ב-SQLite כמסד הנתונים בשלב הפיתוח הראשוני",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-11-01 — בחירת מסד הנתונים: SQLite"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "הוספת CustomUser במקום User הסטנדרטי",
+                "summary": "הרחבת AbstractUser ליצירת CustomUser עם שדות role ו-team",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-11-10 — הוספת CustomUser במקום User הסטנדרטי"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "מבנה טבלת tasks — הוספת שדה created_by",
+                "summary": "הוספת שדה created_by למודל Task לצורך ביקורת (audit) והצגת היסטוריה",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-11-15 — מבנה טבלת tasks — הוספת שדה created_by"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "הוספת מערכת הרשאות מבוססת תפקיד",
+                "summary": "בדיקת הרשאות מנהל ברמת View לפי team.admin_id == user.id",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-11-20 — הוספת מערכת הרשאות מבוססת תפקיד"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "שינוי שדה finishDate — מיגרציה 0003",
+                "summary": "שינוי הגדרת שדה finishDate ב-Task בהתאם לדרישות הטופס",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-11-28 — שינוי שדה finishDate — מיגרציה 0003"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "הוספת סינון משימות בדף הבית",
+                "summary": "הוספת סינון לפי סטטוס ועובד בדף הבית עם גידול מספר המשימות",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2024-12-05 — הוספת סינון משימות בדף הבית"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "הגדרת LOGOUT_REDIRECT_URL ו-LOGIN_REDIRECT_URL",
+                "summary": "הגדרת ניתוב אוטומטי לאחר התחברות והתנתקות לשיפור חוויית המשתמש",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "engineering_log.md",
+                    "anchor": "2025-01-10 — הגדרת LOGOUT_REDIRECT_URL ו-LOGIN_REDIRECT_URL"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "מערכת התראות",
+                "summary": "שליחת התראות בזמן אמת לאירועים במערכת",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מערכת התראות"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "אינטגרציה עם אימייל",
+                "summary": "שליחת אימיילים אוטומטיים לאירועים חשובים",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "אינטגרציה עם אימייל"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "שיפור ביצועים בשאילתות",
+                "summary": "אופטימיזציה של שאילתות ORM למניעת בעיות ביצועים",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "שיפור ביצועים בשאילתות"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "ממשק ניהול מתקדם",
+                "summary": "שיפור פאנל הניהול לשימוש נוח יותר",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "ממשק ניהול מתקדם"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "REST API",
+                "summary": "חשיפת API לאפליקציות מובייל ואינטגרציות חיצוניות",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "REST API"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "היסטוריית שינויים למשימה",
+                "summary": "תיעוד שינויים במשימה באמצעות מודל TaskHistory",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "היסטוריית שינויים למשימה"
+                }
+            },
+            {
+                "id": "N/A",
+                "title": "מעבר ל-PostgreSQL בייצור",
+                "summary": "החלפת SQLite ב-PostgreSQL לסביבת ייצור",
+                "tags": [],
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מעבר ל-PostgreSQL בייצור"
+                }
+            }
+        ],
+        "rules": [
+            {
+                "id": "N/A",
+                "rule": "Team → CustomUser (admin) is a OneToOne relationship with CASCADE behavior on deletion.",
+                "scope": "Database",
+                "source": {
+                    "tool": "cursor",
+                    "file": "database.md",
+                    "anchor": "קשרים בין הטבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "CustomUser → Team is a ForeignKey relationship with SET_NULL behavior on deletion.",
+                "scope": "Database",
+                "source": {
+                    "tool": "cursor",
+                    "file": "database.md",
+                    "anchor": "קשרים בין הטבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "Task → Team is a ForeignKey relationship with CASCADE behavior on deletion.",
+                "scope": "Database",
+                "source": {
+                    "tool": "cursor",
+                    "file": "database.md",
+                    "anchor": "קשרים בין הטבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "Task → CustomUser (worker) is a ForeignKey relationship with SET_NULL behavior on deletion.",
+                "scope": "Database",
+                "source": {
+                    "tool": "cursor",
+                    "file": "database.md",
+                    "anchor": "קשרים בין הטבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "Task → CustomUser (created_by) is a ForeignKey relationship with CASCADE behavior on deletion.",
+                "scope": "Database",
+                "source": {
+                    "tool": "cursor",
+                    "file": "database.md",
+                    "anchor": "קשרים בין הטבלאות"
+                }
+            },
+            {
+                "id": "html-rtl",
+                "rule": "כל תבנית HTML חייבת לכלול `lang=\"he\" dir=\"rtl\"` בתג `<html>`.",
+                "scope": "RTL",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "תמיכה ב-RTL (ימין לשמאל)"
+                }
+            },
+            {
+                "id": "bootstrap-rtl",
+                "rule": "Bootstrap 5 תומך ב-RTL באופן מובנה — אין צורך בספרייה נוספת.",
+                "scope": "RTL",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "תמיכה ב-RTL (ימין לשמאל)"
+                }
+            },
+            {
+                "id": "text-direction",
+                "rule": "כיוון הטקסט, הכפתורים והפריסה מתאימים אוטומטית לעברית.",
+                "scope": "RTL",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "תמיכה ב-RTL (ימין לשמאל)"
+                }
+            },
+            {
+                "id": "avoid-ltr",
+                "rule": "אל תוסיף `dir=\"ltr\"` לאלמנטים בודדים אלא אם יש סיבה מפורשת (כגון קוד תכנות).",
+                "scope": "RTL",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "תמיכה ב-RTL (ימין לשמאל)"
+                }
+            },
+            {
+                "id": "color-consistency",
+                "rule": "אל תוסיף צבעים חדשים שאינם מהפלטה הקיימת. שמור על עקביות ויזואלית.",
+                "scope": "פלטת צבעים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "פלטת צבעים"
+                }
+            },
+            {
+                "id": "content-cards",
+                "rule": "כל בלוק תוכן עצמאי (טופס, רשימה, פאנל) יוצג בתוך `.soft-card`.",
+                "scope": "כרטיסיות (Cards)",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "border-shadow",
+                "rule": "אין להשתמש ב-`border` ישיר — רק `box-shadow` לעומק.",
+                "scope": "כרטיסיות (Cards)",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "border-radius",
+                "rule": "`border-radius` אחיד: `22px` לכרטיסיות, `14px` לכפתורים, `999px` לאלמנטים עגולים.",
+                "scope": "כרטיסיות (Cards)",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "main-buttons",
+                "rule": "כפתורי פעולה ראשיים: `.btn.soft-btn` עם גרדיאנט, ללא border.",
+                "scope": "כפתורים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "cancel-navigation-buttons",
+                "rule": "כפתורי ביטול/ניווט: `.btn.btn-outline-secondary.soft-btn`.",
+                "scope": "כפתורים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "delete-buttons",
+                "rule": "כפתורי מחיקה: `.btn.btn-outline-danger.soft-btn`.",
+                "scope": "כפתורים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "disabled-buttons",
+                "rule": "כפתורים מושבתים: להשתמש ב-`disabled` attribute — לא להסתיר אותם.",
+                "scope": "כפתורים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "disabled-button-style",
+                "rule": "כפתורים מושבתים שצריכים לשמור על עיצובם: להוסיף class `keep-style-disabled`.",
+                "scope": "כפתורים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "כפתורים"
+                }
+            },
+            {
+                "id": "form-rendering",
+                "rule": "כל הטפסים מרונדרים עם `{{ form.as_p }}` של Django.",
+                "scope": "טפסים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "טפסים"
+                }
+            },
+            {
+                "id": "select-fields",
+                "rule": "שדות select משתמשים ב-`.form-select.soft-pill`.",
+                "scope": "טפסים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "טפסים"
+                }
+            },
+            {
+                "id": "date-fields",
+                "rule": "תאריכים מוצגים עם `<input type=\"date\">`.",
+                "scope": "טפסים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "טפסים"
+                }
+            },
+            {
+                "id": "csrf-token",
+                "rule": "כל טופס POST חייב לכלול `{% csrf_token %}`.",
+                "scope": "טפסים",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "טפסים"
+                }
+            },
+            {
+                "id": "error-messages",
+                "rule": "הודעות שגיאה: `messages.error(request, \"...\")`",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "success-messages",
+                "rule": "הודעות הצלחה: `messages.success(request, \"...\")`",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "message-placement",
+                "rule": "הודעות מוצגות בראש הדף, מעל כל התוכן.",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "bootstrap-grid",
+                "rule": "הפריסה מבוססת על Grid של Bootstrap (`col-12 col-lg-8` וכו').",
+                "scope": "רספונסיביות",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "רספונסיביות"
+                }
+            },
+            {
+                "id": "home-page-layout",
+                "rule": "בדף הבית: פאנל המשימות תופס `col-lg-8`, פאנל הוספת משימה `col-lg-4`.",
+                "scope": "רספונסיביות",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "רספונסיביות"
+                }
+            },
+            {
+                "id": "small-screens",
+                "rule": "במסכים קטנים: כל הפאנלים מוצגים בעמודה אחת (`col-12`).",
+                "scope": "רספונסיביות",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "רספונסיביות"
+                }
+            },
+            {
+                "id": "breakpoints",
+                "rule": "אין breakpoints מותאמים אישית — להשתמש רק בברירות המחדל של Bootstrap.",
+                "scope": "רספונסיביות",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "רספונסיביות"
+                }
+            },
+            {
+                "id": "simplicity",
+                "rule": "כל פעולה נגישה מדף הבית — אין ניווט מורכב.",
+                "scope": "חוויית משתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "חוויית משתמש"
+                }
+            },
+            {
+                "id": "immediate-feedback",
+                "rule": "כל פעולה (שיוך, סיום, מחיקה) מחזירה הודעה ברורה.",
+                "scope": "חוויית משתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "חוויית משתמש"
+                }
+            },
+            {
+                "id": "error-prevention",
+                "rule": "כפתורים לא רלוונטיים מושבתים (disabled) ולא מוסתרים.",
+                "scope": "חוויית משתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "חוויית משתמש"
+                }
+            },
+            {
+                "id": "consistency",
+                "rule": "אותו עיצוב בכל הדפים — header, cards, buttons.",
+                "scope": "חוויית משתמש",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ui_rules.md",
+                    "anchor": "חוויית משתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כל תבנית HTML חייבת לפתוח עם: <html lang=\"he\" dir=\"rtl\">",
+                "scope": "תמיכה ב-RTL",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "תמיכה ב-RTL"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תוסיף `dir=\"ltr\"` לאלמנטים בודדים אלא אם מדובר בתוכן טכני (קוד, מספרים).",
+                "scope": "תמיכה ב-RTL",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "תמיכה ב-RTL"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אין להוסיף צבעים חדשים שאינם מהפלטה.",
+                "scope": "פלטת צבעים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "פלטת צבעים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אין להשתמש ב-`border` ישיר — רק `box-shadow`.",
+                "scope": "כרטיסיות (Cards)",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "`border-radius`: `22px` לכרטיסיות, `14px` לכפתורים, `999px` לאלמנטים עגולים.",
+                "scope": "כרטיסיות (Cards)",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כרטיסיות (Cards)"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כפתורי פעולה ראשיים: `.btn.soft-btn` עם גרדיאנט, ללא border.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כפתורי ביטול: `.btn.btn-outline-secondary.soft-btn`.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כפתורי מחיקה: `.btn.btn-outline-danger.soft-btn`.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כפתורים מושבתים: להשתמש ב-`disabled` attribute — לא להסתיר.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כל טופס POST חייב לכלול `{% csrf_token %}`.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "שדות select: `.form-select.soft-pill`.",
+                "scope": "כפתורים וטפסים",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "כפתורים וטפסים"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הודעות שגיאה: `messages.error(request, \"...\")`.",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הודעות הצלחה: `messages.success(request, \"...\")`.",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "מוצגות בראש הדף, מעל כל התוכן.",
+                "scope": "הודעות למשתמש",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "הודעות למשתמש"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כל הפעולות נגישות מדף הבית — אין ניווט מורכב.",
+                "scope": "ממשק פשוט וברור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "ממשק פשוט וברור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כפתורים לא רלוונטיים מושבתים (disabled) ולא מוסתרים — המשתמש מבין מה אפשרי.",
+                "scope": "ממשק פשוט וברור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "ממשק פשוט וברור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "משוב מיידי לכל פעולה דרך הודעות.",
+                "scope": "ממשק פשוט וברור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "ממשק פשוט וברור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "פריסה רספונסיבית: `col-lg-8` למשימות, `col-lg-4` לטופס הוספה, `col-12` במובייל.",
+                "scope": "ממשק פשוט וברור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "design_guidelines.md",
+                    "anchor": "ממשק פשוט וברור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "שימוש ב-Django Signals ו-WebSockets או Celery Beat להתראות בזמן אמת",
+                "scope": "מערכת התראות",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מערכת התראות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הגדרת EMAIL_BACKEND ב-settings.py ושימוש ב-django.core.mail",
+                "scope": "אינטגרציה עם אימייל",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "אינטגרציה עם אימייל"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הוספת select_related לשאילתות Task",
+                "scope": "שיפור ביצועים בשאילתות",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "שיפור ביצועים בשאילתות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הוספת Pagination לרשימת המשימות",
+                "scope": "שיפור ביצועים בשאילתות",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "שיפור ביצועים בשאילתות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הוספת אינדקסים לשדות שמסוננים לעתים קרובות",
+                "scope": "שיפור ביצועים בשאילתות",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "שיפור ביצועים בשאילתות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הגדרת list_display, list_filter, search_fields ב-admin.py",
+                "scope": "ממשק ניהול מתקדם",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "ממשק ניהול מתקדם"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הוספת פעולות bulk (סימון מרובה כהושלם)",
+                "scope": "ממשק ניהול מתקדם",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "ממשק ניהול מתקדם"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "תצוגת סטטיסטיקות בפאנל הניהול",
+                "scope": "ממשק ניהול מתקדם",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "ממשק ניהול מתקדם"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "שימוש ב-Django REST Framework (DRF) לחשיפת API",
+                "scope": "REST API",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "REST API"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "יצירת מודל TaskHistory עם ForeignKey ל-Task",
+                "scope": "היסטוריית שינויים למשימה",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "היסטוריית שינויים למשימה"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "התקנת psycopg2-binary",
+                "scope": "מעבר ל-PostgreSQL בייצור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מעבר ל-PostgreSQL בייצור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "עדכון DATABASES ב-settings.py",
+                "scope": "מעבר ל-PostgreSQL בייצור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מעבר ל-PostgreSQL בייצור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "הרצת migrate מחדש על מסד הנתונים החדש",
+                "scope": "מעבר ל-PostgreSQL בייצור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מעבר ל-PostgreSQL בייצור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "העברת נתונים קיימים עם dumpdata / loaddata",
+                "scope": "מעבר ל-PostgreSQL בייצור",
+                "source": {
+                    "tool": "kiro",
+                    "file": "future_tasks.md",
+                    "anchor": "מעבר ל-PostgreSQL בייצור"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תשנה את CustomUser ללא גיבוי מסד הנתונים.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "1. מנגנון ההזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תסיר את @login_required מ-Views.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "1. מנגנון ההזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תשנה את AUTH_USER_MODEL לאחר יצירת הנתונים הראשונים.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "1. מנגנון ההזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "בדוק את request.user.team לפני request.user.team.admin_id — אחרת AttributeError.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "2. לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תשנה את Personal_areaForm.clean() ללא בדיקה — הוא מונע שני מנהלים לאותו צוות.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "2. לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "כל View חדש שמבצע פעולת כתיבה חייב לכלול בדיקת הרשאות.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "2. לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תשנה את update_fields ב-save() ללא בדיקה שכל השדות הנדרשים כלולים.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "3. עדכון סטטוס משימות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "אל תוסיף מעבר סטטוס חדש ללא עדכון כל הבדיקות הקשורות.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "3. עדכון סטטוס משימות"
+                }
+            },
+            {
+                "id": "N/A",
+                "rule": "בדוק תמיד ש-task.worker is None לפני שיוך, ו-task.worker == request.user לפני סיום.",
+                "scope": "N/A",
+                "source": {
+                    "tool": "kiro",
+                    "file": "risk_areas.md",
+                    "anchor": "3. עדכון סטטוס משימות"
+                }
+            }
+        ],
+        "warnings": [
+            {
+                "id": "N/A",
+                "area": "Database",
+                "message": "SQLite is used for development and small environments. For production, it is recommended to switch to PostgreSQL or MySQL.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "architecture.md",
+                    "anchor": "מסד הנתונים"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "Data Flow",
+                "message": "The data flow between components is described, including the handling of incoming requests, routing, view logic, ORM access, template rendering, and response generation.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "architecture.md",
+                    "anchor": "זרימת הנתונים בין הקומפוננטים"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "Authentication",
+                "message": "The system utilizes Django's built-in Authentication mechanism with a custom `CustomUser` model extending `AbstractUser`. Session management is handled through `django.contrib.sessions` with cookies. CSRF protection is enabled for all forms.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "architecture.md",
+                    "anchor": "מנגנון הזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "מנגנון הזדהות",
+                "message": "**אל תשנה את מנגנון ה-Authentication ללא בדיקה מקיפה.**",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: מנגנון הזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "מנגנון הזדהות",
+                "message": "המערכת משתמשת ב-`CustomUser` שמרחיב את `AbstractUser`. שינויים במודל זה עלולים לשבור:\n- את כל הסשנים הקיימים של משתמשים מחוברים.\n- את הקשרים בין `CustomUser` ל-`Team` ו-`Task`.\n- את פאנל הניהול (`/admin/`).",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: מנגנון הזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "מנגנון הזדהות",
+                "message": "**לפני כל שינוי ב-`CustomUser`:**\n1. גבה את מסד הנתונים (`db.sqlite3`).\n2. בדוק שהמיגרציה נוצרת בצורה תקינה עם `makemigrations --dry-run`.\n3. בדוק שהתחברות, הרשמה ושיוך צוות עדיין עובדים.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: מנגנון הזדהות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "שינוי מבנה טבלאות",
+                "message": "**אל תשנה מודלים קיימים ללא יצירת מיגרציה.**",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: שינוי מבנה טבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "שינוי מבנה טבלאות",
+                "message": "כל שינוי ב-`models.py` (הוספת שדה, שינוי סוג, מחיקת שדה) חייב להיות מלווה ב:\n\nbash\npython manage.py makemigrations\npython manage.py migrate\n",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: שינוי מבנה טבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "שינוי מבנה טבלאות",
+                "message": "**סיכונים:**\n- שינוי ללא מיגרציה יגרום לשגיאות `OperationalError` בזמן ריצה.\n- מחיקת שדה עם נתונים קיימים תגרום לאובדן נתונים בלתי הפיך.\n- שינוי `on_delete` בשדות FK משפיע על התנהגות מחיקת נתונים.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: שינוי מבנה טבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "שינוי מבנה טבלאות",
+                "message": "**שדות FK קריטיים לשים לב אליהם:**\n\n| שדה                    | התנהגות מחיקה | השפעה                                      |\n|------------------------|---------------|--------------------------------------------| \n| `Task.team`            | CASCADE       | מחיקת צוות מוחקת את כל המשימות שלו        |\n| `Task.worker`          | SET_NULL      | מחיקת עובד מאפסת את שדה worker במשימות    |\n| `Task.created_by`      | CASCADE       | מחיקת יוצר המשימה מוחקת את המשימה         |\n| `Team.admin`           | CASCADE       | מחיקת מנהל מוחקת את הצוות                 |\n| `CustomUser.team`      | SET_NULL      | מחיקת צוות מנתקת את המשתמשים ממנו         |",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: שינוי מבנה טבלאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "לוגיקת הרשאות",
+                "message": "**היזהר משינויים בלוגיקת ההרשאות — שגיאה עלולה לאפשר גישה לא מורשית.**",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "לוגיקת הרשאות",
+                "message": "הרשאות מנהל נבדקות ב-Views כך:\n\npython\nif request.user.team and request.user.team.admin_id == request.user.id:\n    # פעולת מנהל\n",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "לוגיקת הרשאות",
+                "message": "**אזהרות ספציפיות:**\n- אל תסיר את `@login_required` מ-Views — זה יאפשר גישה ללא התחברות.\n- אל תשנה את בדיקת `admin_id` ללא בדיקה מלאה של כל הפעולות (יצירה, עדכון, מחיקה).\n- בדיקת `request.user.team` חייבת להיות לפני `request.user.team.admin_id` — אחרת תקבל `AttributeError`.\n- אל תאפשר למשתמש לשנות `role` או `team` לאחר ההגדרה הראשונית — זה מכוון ומוגן ב-`personal_area` view.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: לוגיקת הרשאות"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "SECRET_KEY",
+                "message": "**אל תעלה את ה-`SECRET_KEY` ל-Git בסביבת ייצור.**",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: SECRET_KEY"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "SECRET_KEY",
+                "message": "הקובץ `Python_Project/settings.py` מכיל כרגע `SECRET_KEY` חשוף. \nלפני deployment לייצור:\n\npython\n# settings.py\nimport os\nSECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')\n",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: SECRET_KEY"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "DEBUG=True",
+                "message": "**אל תפרוס לייצור עם `DEBUG=True`.**",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: DEBUG=True"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "DEBUG=True",
+                "message": "`DEBUG=True` חושף מידע רגיש בדפי שגיאה (stack traces, הגדרות, נתיבי קבצים). \nבסביבת ייצור: `DEBUG=False` ו-`ALLOWED_HOSTS=['your-domain.com']`.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "developer_warnings.md",
+                    "anchor": "אזהרה: DEBUG=True"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "views.py - personal_area",
+                "message": "לוגיקה מורכבת: בדיקה אם המשתמש כבר בחר צוות, שמירת המנהל לצוות. שינוי כאן עלול לשבור את זרימת ה-onboarding של משתמשים חדשים.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "known_issues.md",
+                    "anchor": "אזורים רגישים בקוד"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "form.py - Personal_areaForm.clean()",
+                "message": "בדיקה אם כבר קיים מנהל לצוות. שינוי הלוגיקה עלול לאפשר שני מנהלים לאותו צוות.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "known_issues.md",
+                    "anchor": "אזורים רגישים בקוד"
+                }
+            },
+            {
+                "id": "N/A",
+                "area": "form.py - Personal_areaForm.save()",
+                "message": "שמירת המנהל לצוות מתבצעת כאן — לא ב-View. חשוב לדעת זאת בעת debugging.",
+                "severity": "N/A",
+                "source": {
+                    "tool": "cursor",
+                    "file": "known_issues.md",
+                    "anchor": "אזורים רגישים בקוד"
+                }
+            }
+        ]
+    }
+}
