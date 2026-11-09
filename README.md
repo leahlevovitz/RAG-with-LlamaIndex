@@ -2,12 +2,6 @@
 
 > A Retrieval-Augmented Generation assistant that answers developers' questions about a software project (architecture, UI rules, technical decisions, warnings), using a **smart router** that picks the right retrieval strategy for every question.
 
-![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
-![LlamaIndex](https://img.shields.io/badge/LlamaIndex-Workflows-7B3FE4)
-![Pinecone](https://img.shields.io/badge/Pinecone-Vector_DB-000000)
-![Cohere](https://img.shields.io/badge/Cohere-LLM_%26_Embeddings-39594D)
-![Gradio](https://img.shields.io/badge/UI-Gradio-FF7C00)
-
 ![RAG workflow](workflow.png)
 
 ## 🎯 The problem
@@ -57,4 +51,4 @@ python ui/chat_app.py           # open http://127.0.0.1:7860
 - *"What technical decisions were made?"* → structured lookup
 
 ---
-👩‍💻 Built by **Leah Levovitz** · [LinkedIn](https://www.linkedin.com/in/leahlevovitz) · [GitHub](https://github.com/leahlevovitz)
+👩‍💻 Built by **Leah Levovitz** · [GitHub](https://github.com/leahlevovitz)
